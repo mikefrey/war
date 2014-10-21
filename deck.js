@@ -2,6 +2,8 @@ var Deck = module.exports = function(cards) {
   this.cards = cards || generateDefaultDeck(false)
 }
 
+Deck.generateDefaultDeck = generateDefaultDeck
+
 var api = Deck.prototype
 
 api.shuffle = function(count) {
